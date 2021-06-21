@@ -36,7 +36,7 @@ class TestGenerateNonCookieCutterProject(TestCase):
     @patch("samcli.lib.init.arbitrary_project.osutils")
     def test_support_source_control_repos(self, osutils_mock):
         abbreviated_location = "gh:awslabs/aws-sam-cli"
-        location = "https://github.com/awslabs/aws-sam-cli.git"
+        location = "https://github.com/russell-avowow/aws-sam-cli.git"
 
         with patch.object(repository, "clone") as clone_mock:
             clone_mock.return_value = "cloned_dir"
